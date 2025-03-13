@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
+    <title>Course Home Page</title>
+    <meta name="description" content="A homepage for WDD 231 course">
+    <meta name="author" content="Songopa Julius">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div class="text-right mr-1">
+            <a class="" id="menu" href="#"></a>
+        </div>
+        <span class="justify-center align-center fs-2 text-white fnt-bold">
+            <img class="img-tile" src="images/profile.webp" alt="Juson" height="400" width="200">
+            Songopa Julius
+        </span>
+        <nav id="navigation">
+            <a href="#">Home</a>
+            <a href="/chamber/">Chamber</a>
+            <a href="https://github.com/songopa/" target="_blank">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/julius-songopa-744934113/" target="_blank">LinkedIn</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="ml-1">
+            Home
+        </h1>
+        <div class="grid-2-1">
+            <section>
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h3>Course Work</h3>
+                    </div>
+                    <div class="card-body row">
+                        <div class="col align-center">
+                            <ul class="margin-vh">
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h3>Zanzibar, Tanzania</h3>
+                    </div>
+                    <div class="card-body">
+                        <img class="img-znz" src="images/znz-small.webp" alt="Juson" height="400" width="200">
+        
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section>
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3> Web and Computer Programming Certificate </h3>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-center">
+                        <button id="allCoursesBtn" class="sort-btn bg-black text-white">All</button>
+                        <button id="cseCoursesBtn" class="sort-btn bg-black text-white">CSE</button>
+                        <button id="wddCoursesBtn" class="sort-btn bg-black text-white">WDD</button>
+                    </div>
+                    <hr>
+                    <div id="courses" class="d-flex justify-center">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="text-white">&copy; <span id="currentYear"></span> | Songopa Julius | Tanzania </p>
+        <p class="text-white" id="lastModified"></p>
+    </footer>
 </body>
 </html>
