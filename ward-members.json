@@ -1,0 +1,23 @@
+{
+    "familyNname": "Lolepo",
+    "movingDate": "22-03-1986",
+    "peopleNumber": 3,
+    "visitedBishopric": false,
+    "members": [
+        {
+            "name": "John Lolepo",
+            "gender": "male",
+            "dob": "11-5-1992"
+        },
+        {
+            "name": "Sebastian Lolepo",
+            "gender": "male",
+            "dob": "11-5-1995"
+        },
+        {
+            "name": "Linda Lolepo",
+            "gender": "female",
+            "dob": "11-5-1998"
+        }
+    ]
+}
