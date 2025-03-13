@@ -97,9 +97,6 @@ figure, p {
 section {
     margin: 2px 1rem;
 }
-header a {
-    text-decoration: none;
-}
 button {
     border: 1px var(--secondary-color) solid;
     border-radius: 0.375rem;
@@ -145,17 +142,6 @@ button:hover {
 .float-left {
     float: left;
     align-self: center;
-}
-
-.text-center {
-    text-align: center;
-}
-.text-right {
-    text-align: right;
-}
-
-.justify-center {
-    justify-self: center;
 }
 
 .align-center {
@@ -247,9 +233,6 @@ button:hover {
 }
 .justify-end {
     justify-content: end;
-}
-.align-center {
-    align-content: center;
 }
 
 .heading-font {
