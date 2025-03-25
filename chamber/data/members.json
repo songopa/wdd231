@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Shoe Palace",
+        "address": {
+            "location": "Duki street - Michenzani",
+            "postalAddress": "P. O. Box 8939"
+        },
+        "phoneNumber": 25565476587,
+        "website": "https://bestshoes.co.tz",
+        "image": "images/shoebiz.webp",
+        "membershipLevel": "Member",
+        "active": true
+    },
+    {
+        "name": "Master Cutz",
+        "address": {
+            "location": "Princeton street Coopenheart",
+            "postalAddress": "P. O. Box 212"
+        },
+        "phoneNumber": 2558484884848,
+        "website": "https://mastercutz.com",
+        "image": "images/barberbiz.webp",
+        "membershipLevel": "Silver",
+        "active": true
+    },
+    {
+        "name": "Imperial Hotel",
+        "address": {
+            "location": "bibi titi mohamedi, plot 13",
+            "postalAddress": "P. O. Box 2121"
+        },
+        "phoneNumber": 25588489494,
+        "website": "https://imperial.com",
+        "image": "images/hotelbiz.webp",
+        "membershipLevel": "Gold",
+        "active": true
+    },
+    {
+        "name": "The Tasty Grill",
+        "address": {
+            "location": "morocco square, plot 9",
+            "postalAddress": "P. O. Box 11212"
+        },
+        "phoneNumber": 255959440606,
+        "website": "https://grill.com",
+        "image": "images/bbqbiz.webp",
+        "membershipLevel": "Gold",
+        "active": true
+    },
+    {
+        "name": "Supernova Designs",
+        "address": {
+            "location": "Kizimkazi kiambuni, plot 223",
+            "postalAddress": "P. O. Box 93932"
+        },
+        "phoneNumber": 2559595959503,
+        "website": "https://supernova.com",
+        "image": "images/designerbiz.webp",
+        "membershipLevel": "Gold",
+        "active": true
+    },
+    {
+        "name": "Global Logistics Limited",
+        "address": {
+            "location": "Kizimkazi kiambuni, plot 1",
+            "postalAddress": "P. O. Box 12987"
+        },
+        "phoneNumber": 2559595959503,
+        "website": "https://globallogistics.com",
+        "image": "images/logisticsbiz.webp",
+        "membershipLevel": "Member",
+        "active": true
+    },
+    {
+        "name": "The Gentlemen Suits Ltd",
+        "address": {
+            "location": "Empire square, ground floor shop 18",
+            "postalAddress": "P. O. Box 4982"
+        },
+        "phoneNumber": 2559089787343,
+        "website": "https://gentlesuits.com",
+        "image": "images/suitsbiz.webp",
+        "membershipLevel": "Gold",
+        "active": true
+    },
+    {
+        "name": "Sotojo Travel and Tours",
+        "address": {
+            "location": "Empire square, ground floor shop 3",
+            "postalAddress": "P. O. Box 8380"
+        },
+        "phoneNumber": 255678456234,
+        "website": "https://sotojo.com",
+        "image": "images/ticketbiz.webp",
+        "membershipLevel": "Silver",
+        "active": true
+    }
+]

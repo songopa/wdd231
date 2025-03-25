@@ -2,7 +2,7 @@
     "familyNname": "Lolepo",
     "movingDate": "22-03-1986",
     "peopleNumber": 3,
-    "visitedBishopric": false,
+    "visitedBishopric": true,
     "members": [
         {
             "name": "John Lolepo",
