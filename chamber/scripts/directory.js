@@ -12,6 +12,8 @@ menuBtn.addEventListener('click', function() {
     menuBtn.classList.toggle('show')
 })
 
+const businessElement = document.querySelector("#businesses");
+
 function businessTemplate (business) {
     return `
     <section>
@@ -24,7 +26,6 @@ function businessTemplate (business) {
     </section> `
 }
 
-const businessElement = document.querySelector("#businesses");
 
 function displayBusinesses(data) {
     const businessHtml = data.map(businessTemplate);

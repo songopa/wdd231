@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 </head>
 <body>
     <header>
@@ -37,7 +37,7 @@
                 </div>
                 
                 <nav id="navigation">
-                    <a href="index.html">Home</a>
+                    <a class="active" href="index.html">Home</a>
                     <a href="directory.html">Directory</a>
                     <a href="#">Join</a>
                     <a href="/#">Discover</a>
@@ -46,7 +46,38 @@
         </div>
     </header>
     <main>
-        <h1 class="text-center">Coming Soon</h1>
+        <figure class="ps-relative">
+            <picture>
+                <source media="(min-width:600px)" srcset="images/znz-hero.webp">
+                <img src="images/znz-small.webp" width="390" height="400" alt="znz-hero">
+            </picture>
+            <h1 class="text-center">Zanzibar <br> Chamber of Commerce</h1>
+            <button>Join Now</button>
+        </figure>
+        <section class="grid-2-1-1" >
+            <div class="card">
+                <div class="card-header">Events</div>
+                <div class="card-body">
+                    No current events! <br>
+                    Get back some other time
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">Current Weather</div>
+                <div class="card-body" id="currentWeather">
+                    
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">Weather Forecast</div>
+                <div class="card-body" id="forecastWeather">
+                    
+                </div>
+            </div>
+        </section>
+        <section class="grid" id="bizSnapshot">
+            
+        </section>
     </main>
     <footer class="grid-footer">
         <div>
