@@ -113,7 +113,7 @@ button:hover {
 }
 
 figure > h1 {
-    position: absolute;
+    position: absolute !important;
     top: 10%;
     left: 10%;
     color: seashell;
@@ -123,7 +123,7 @@ figure > h1 {
 }
 
 figure > button {
-    position: absolute;
+    position: absolute !important;
     bottom: 5%;
     right: 10%;
     background-color: var(--brand-shade1);
@@ -337,7 +337,7 @@ picture > img {
 }
 
 .ps-relative {
-    position: relative;
+    position: relative !important;
 }
 .biz-snap-img {
     width: 6rem;
