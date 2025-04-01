@@ -75,9 +75,6 @@ header a {
 	content: "X";
     font-size: 1.5rem;
 }
-main {
-    min-height: 64vh;
-}
 footer {
     background-color: var(--brand-color);
     color: white;
@@ -143,26 +140,18 @@ picture > img {
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
-.grid-footer {
-    display: block;
-}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
 }
-.grid-2-1, .grid-2-1-1 {
+.grid-2-1, .grid-2-1-1, .grid-footer {
     display: block;
 }
-
-
-.img-tile {
-    width: 3rem;
-    height: auto;
-    padding: 2px;
-    border-radius: 5%;
-    margin: 0px 10px 4px;
-    
+.grid-2-1-1, #bizSnapshot{
+    min-height: 500px;
 }
+
 
 .img-nav {
     width: 48px;
@@ -347,3 +336,4 @@ picture > img {
     margin: 0px 10px 4px;
     float: left;
 }
+

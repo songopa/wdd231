@@ -30,8 +30,8 @@
         grid-template-columns: 2fr 1fr 1fr;
         column-gap: 0.2rem;
         padding: 0.5rem;
+        min-height: 248.92px;
     }
-    
     .grid-footer {
         display: grid;
         grid-template-columns: 2fr 1fr 2fr;
@@ -47,6 +47,9 @@
     picture > img {
         height: auto;
     
+    }
+    #bizSnapshot {
+        min-height: 167.94px;
     }
 
 }
