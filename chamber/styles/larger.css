@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
     /* header {
         display: flex;
         justify-content: space-around;
@@ -18,6 +18,12 @@
     }
     #menu {
         display: none;
+    }
+    .grid-1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0.2rem;
+        padding: 0.5rem;
     }
     .grid-2-1 {
         display: grid;
@@ -50,6 +56,17 @@
     }
     #bizSnapshot {
         min-height: 167.94px;
+    }
+    input, select, textarea {
+        padding: 12px;
+    }
+    input[type='text'], 
+    input[type='date'], 
+    input[type='number'], 
+    input[type='email'], 
+    select, 
+    textarea {
+        max-width: 400px;
     }
 
 }
