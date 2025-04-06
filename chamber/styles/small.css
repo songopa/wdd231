@@ -23,11 +23,12 @@ body {
     font-family: var(--paragraph-font);
     margin: 0 auto;
 }
-h1, h2, h3, h4{
+h1, h2, h3{
     font-family: var(--heading-font);
-    color: var(--primary-color);
-    margin: .5rem  .5rem !important;
+    color: var(--brand-color);
+    margin: .175rem !important;
 }
+
 
 header {
     background-color: var(--brand-color);
