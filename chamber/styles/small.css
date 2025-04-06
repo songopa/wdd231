@@ -22,14 +22,13 @@
 body {
     font-family: var(--paragraph-font);
     margin: 0 auto;
+    background-color: var(--brand-shade2);
 }
 h1, h2, h3{
     font-family: var(--heading-font);
     color: var(--brand-color);
     margin: .175rem !important;
 }
-
-
 header {
     background-color: var(--brand-color);
     padding-top: 5px;
@@ -104,8 +103,9 @@ section {
     margin: 2px 1rem;
 }
 button {
-    border: .15rem var(--brand-shade3) solid;
-    background-color: var(--card-background);
+    border: .15rem var(--brand-color) solid;
+    background-color: var(--brand-color);
+    color: white;
     border-radius: .375rem;
     padding: .375rem .7rem;
     margin: .2rem .5rem;
@@ -113,7 +113,7 @@ button {
 }
 button:hover {
     cursor: pointer;
-    background-color: white;
+    letter-spacing: 1px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
@@ -129,7 +129,6 @@ figure > h1 {
 }
 
 figure > a > button  {
-    color: black;
     position: absolute !important;
     bottom: 5%;
     right: 10%;
@@ -195,6 +194,8 @@ picture > img {
     background-color: var(--card-background);
     border: var(--card-border) ;
     border-radius: var(--card-border-radius);
+    border-left: .4rem solid var(--brand-color);
+    border-top-left-radius: 5%;
     margin: 2px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
