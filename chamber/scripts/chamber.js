@@ -284,7 +284,7 @@ const joinForm = document.querySelector('#joinForm');
 
 if (joinForm) {
     joinForm.addEventListener('submit', (event) => {
-        // event.preventDefault()
+        event.preventDefault()
 
         const firstName = document.querySelector('#first-name').value;
         const lastName = document.querySelector('#last-name').value;
@@ -309,6 +309,7 @@ if (joinForm) {
         };
         
         storeNewMember(memberInfo);
+        window.location.href = "thankyou.html";
     })
 }
 

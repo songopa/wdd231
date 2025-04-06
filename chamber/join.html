@@ -48,68 +48,66 @@
                 <h2 class="fs-md">
                     Registration Form - Zanzibar CoC
                 </h2>
-                <div class="grid">
-                    <form  action="thankyou.html" id="joinForm" method="post">
-                        <fieldset>
-                            <label>
-                                First Name
-                                <input type="text" name="first-name" id="first-name" title="First name" required autocomplete="given-name">
-                            </label>
-                            <label>
-                                Last Name
-                                <input type="text" name="last-name" id="last-name" title="Last name" required autocomplete="family-name">
-                            </label>
-                            <label>
-                                Position Title
-                                <input type="text" name="position-title" id="position-title" title="Position Title" minlength="7" autocomplete="organization-title">
-                                <small class="text-danger" id="titleErr"></small>
-                            </label>
-                            <label>
-                                Email
-                                <input type="email" name="email" id="email" title="Email" required autocomplete="email" placeholder="johndoe@organization.com">
-                            </label>
-                            <label>
-                                Phone
-                                <input type="tel" name="phone" id="phone" title="Phone" required autocomplete="tel">
-                            </label>
-                        </fieldset>
-                        <fieldset>
-                            <label>
-                                Business Name
-                                <input type="text" name="business-name" id="business-name" title="Business name" required autocomplete="organization">
-                            </label>
-                            
-                            <label>Membership Levels <sup>*</sup></label> 
-                            
-                            <label>
-                                <input type="radio" name="membership" id="npMembership" value="Non-profit">
-                                NP (Non-profit) Membership
-                            </label>
-                            <label>
-                                <input type="radio" name="membership" id="bronzeMembership" value="Bronze">
-                                Bronze Membership
-                            </label>
-                            <label>
-                                <input type="radio" name="membership" id="silverMembership" value="Silver">
-                                Silver Membership
-                            </label>
-                            <label>
-                                <input type="radio" name="membership" id="goldMembership" value="Gold">
-                                Gold Membership
-                            </label>
-                            <label>
-                                Description (optional)
-                                <textarea name="description" id="description" title="Description" rows="5"></textarea>
-                            </label>
-                            <input type="hidden" name="join-date" id="join-date" hidden>
-                            <div hidden>
-                            </div>
-                        </fieldset>
-                        <button type="submit" id="join-submit-btn">
-                            Join
-                        </button>
-                    </form>
-                </div>
+                <form class="grid"  action="thankyou.html" id="joinForm" method="post">
+                    <fieldset>
+                        <label>
+                            First Name
+                            <input type="text" name="first-name" id="first-name" title="First name" required autocomplete="given-name">
+                        </label>
+                        <label>
+                            Last Name
+                            <input type="text" name="last-name" id="last-name" title="Last name" required autocomplete="family-name">
+                        </label>
+                        <label>
+                            Position Title
+                            <input type="text" name="position-title" id="position-title" title="Position Title" minlength="7" autocomplete="organization-title">
+                            <small class="text-danger" id="titleErr"></small>
+                        </label>
+                        <label>
+                            Email
+                            <input type="email" name="email" id="email" title="Email" required autocomplete="email" placeholder="johndoe@organization.com">
+                        </label>
+                        <label>
+                            Phone
+                            <input type="tel" name="phone" id="phone" title="Phone" required autocomplete="tel">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label>
+                            Business Name
+                            <input type="text" name="business-name" id="business-name" title="Business name" required autocomplete="organization">
+                        </label>
+                        
+                        <label>Membership Levels <sup>*</sup></label> 
+                        
+                        <label>
+                            <input type="radio" name="membership" id="npMembership" value="Non-profit">
+                            NP (Non-profit) Membership
+                        </label>
+                        <label>
+                            <input type="radio" name="membership" id="bronzeMembership" value="Bronze">
+                            Bronze Membership
+                        </label>
+                        <label>
+                            <input type="radio" name="membership" id="silverMembership" value="Silver">
+                            Silver Membership
+                        </label>
+                        <label>
+                            <input type="radio" name="membership" id="goldMembership" value="Gold">
+                            Gold Membership
+                        </label>
+                        <label>
+                            Description (optional)
+                            <textarea name="description" id="description" title="Description" rows="5"></textarea>
+                        </label>
+                        <input type="hidden" name="join-date" id="join-date" hidden>
+                        <div hidden>
+                        </div>
+                    </fieldset>
+                    <button type="submit" id="join-submit-btn">
+                        Confirm Joining The Chamber
+                    </button>
+                </form>
             </section>
             <section class="animate-cards">
                 <h2 class="fs-md">
