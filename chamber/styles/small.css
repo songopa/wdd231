@@ -1,8 +1,6 @@
 
 :root {
     --primary-color: #071013;
-    --secondary-color: #083d4d;
-    --emphasis-color: #0c3a0a;
     --brand-color: #107896;
     --brand-shade1: #e5f7fc;
     --brand-shade2: rgba(140, 220, 243, .1);
@@ -12,7 +10,7 @@
     --paragraph-font:"Roboto", sans-serif;
 
     --nav-link-color: #fff;
-    --nav-hover-underline-color: #BAFF29; 
+    --nav-hover-underline-color: rgb(230, 227, 97); 
 
     --card-background: white;
     --card-border:0.1rem solid #e5f7fc;
@@ -27,7 +25,7 @@ body {
 h1, h2, h3{
     font-family: var(--heading-font);
     color: var(--brand-color);
-    margin: .175rem !important;
+    margin: .375rem !important;
 }
 header {
     background-color: var(--brand-color);
@@ -44,18 +42,20 @@ nav a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 nav a:hover {
-    letter-spacing: 1px;
-    text-decoration : underline var(--nav-hover-underline-color);
+    text-decoration : overline var(--nav-hover-underline-color);
     text-underline-offset: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 nav .active {
     letter-spacing: 1px;
-    text-decoration : underline var(--nav-hover-underline-color) double 2px;
-    text-underline-offset: 8px;
+    font-weight: 900;
+    text-decoration : overline var(--nav-hover-underline-color)  2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 nav.show {
     display: grid;
@@ -63,6 +63,7 @@ nav.show {
 header a {
     text-decoration: none;
 }
+
 #menu::before {
     content: "≡";
     color: var(--nav-hover-link-color);
@@ -81,18 +82,19 @@ footer {
     background-color: var(--brand-color);
     color: white;
     padding:  1rem;
+    margin-top: 2rem;
 }
 
 li {
-    line-height: 3rem;
+    line-height: 2rem;
 }
-p {
-    padding: .1rem;
+p, address {
+    padding: .1rem .375rem;
     margin: .1rem;
     font-size: .9rem;
 }
 main {
-    min-height: 65vh;
+    min-height: 95;
 }
 
 main > figure {
@@ -107,7 +109,7 @@ button {
     background-color: var(--brand-color);
     color: white;
     border-radius: .375rem;
-    padding: .375rem .7rem;
+    padding: .8rem .7rem;
     margin: .2rem .5rem;
     font-weight: bold;
 }
@@ -116,6 +118,17 @@ button:hover {
     letter-spacing: 1px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
+button > a {
+    color: white;
+    text-decoration: none;
+    height: 48px;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+    justify-self: center;
 }
 
 figure > h1 {
@@ -170,6 +183,30 @@ picture > img {
     
 }
 
+.site-visit-state {
+    position: relative;
+    text-align: end;
+    margin: .5rem 1rem 0 0;
+    animation: fadeInLeft 4s;
+    /* background-color: rgb(60, 160, 60);
+    color: white; */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+    padding: 2px 5px;
+    border-radius: 2px;
+    width: fit-content;
+}
+.site-visit-state:hover {
+    cursor: pointer;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(12rem);
+    }
+}
+
 .float-right {
     float: right;
     align-self: center;
@@ -194,8 +231,6 @@ picture > img {
     background-color: var(--card-background);
     border: var(--card-border) ;
     border-radius: var(--card-border-radius);
-    /* border-left: .4rem solid var(--brand-color); */
-    /* border-top-left-radius: 5%; */
     margin: 2px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -306,7 +341,7 @@ picture > img {
     gap: 2.5rem 0;
     justify-content: center;
     align-items: stretch;
-    min-height: 70vh;
+    min-height: 450px;
 }
 .dir-grid section {
     border: var(--card-border);
@@ -362,7 +397,6 @@ form {
     display: block;
     padding: .5rem;
     margin: 0 2%;
-    /* width: 92%; */
 }
 form label {
     display: block;
@@ -436,3 +470,60 @@ dialog {
     cursor: pointer;
     margin-top: -1.5rem !important;
   }
+
+  /*Discover styling*/
+.discover-img {
+    object-fit: cover;
+    width: 300;
+    height: auto;
+    
+}
+.discover-grid button {
+    width: 98%;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    min-height: 650px;
+}
+.discover-grid > .card {
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "image"
+    "description"
+    "address"
+    "button";
+}
+.discover-grid > .card > h2 {
+    grid-area: title;
+}
+.discover-grid > .card > figure {
+    grid-area: image;
+}
+.discover-grid > .card > p {
+    grid-area: description;
+}
+.discover-grid > .card > address {
+    grid-area: address;
+}
+.discover-grid > .card > button  {
+    grid-area: button;
+}
+
+@media screen and (min-width: 640px) {
+    .discover-grid > .card {
+        grid-template-areas: 
+        "title title"
+        "image description"
+        "image address"
+        "button button";
+    }
+}
+@media screen and (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

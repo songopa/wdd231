@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Old Fort",
+        "address": "Mizingani Rd, Zanzibar, Tanzania",
+        "location": "https://maps.app.goo.gl/bv86QkTBBzaejBgv9",
+        "image": "images/old-fort.webp",
+        "description": "The history of Zanzibar island lays in this Old Fort, there's plenty to learn and experience. The Old Fort, also known as the Arab Fort and by other names, is a fortification located in Stone Town, the capital of Zanzibar. It is the oldest building and a major visitor attraction of Stone Town. It is located on the main seafront, adjacent to another landmark building of the city, the House of Wonders, and facing the Forodhani Gardens."
+    },
+    {
+        "name": "Paje Beach",
+        "address": "Paje, Zanzibar, Tanzania",
+        "location": "https://maps.app.goo.gl/ZnQPS6newbABGUvf6",
+        "image": "images/paje-beach.webp",
+        "description": "Excellent beach and perfect for a morning walk. Plenty of restaurants and amenities nearby, never feels too crowded or busy, evening during the day. If snorkeling or water sports are your thing, plenty of options too."
+    },
+    {
+        "name": "Jozani Forest",
+        "address": "Mapopwe, Zanzibar, Tanzania",
+        "location": "https://maps.app.goo.gl/1RdGUtuFa4LpaXUX6",
+        "image": "images/jozani-forest.webp",
+        "description": "Jozani Forest is a beautiful experience especially if you're a nature lover! Home to the rare Zanzibar Red Colobus Monkey, it offers a serene escape with lush greenery, diverse wildlife, and breathtaking mangrove boardwalks. The guided tours are both informative and engaging, making it a truly memorable experience."
+    },
+    {
+        "name": "Jambiani Beach",
+        "address": "Jambiani, Zanzibar, Tanzania",
+        "location": "https://maps.app.goo.gl/iBfiC6cYibTGLg8U7",
+        "image": "images/jambiani-beach.webp",
+        "description": "Plenty of white sand beaches..clear water and lots of small beach lodges you can choose around at your budget."
+    },
+    {
+        "name": "Kiwengwa Beach",
+        "address": "Kiwengwa, Zanzibar, Tanzania",
+        "location": "https://maps.app.goo.gl/gxcAGCjii9ez514N9",
+        "image": "images/kiwengwa-beach.webp",
+        "description": "A perfect paradise. Beautiful white sand and unbelievably warm sea . A place that has it all - get a great tan, eat amazing food, swim in the warmest waters and meet Maasai."
+    },
+    {
+        "name": "Fukuchani Ruins & Cave",
+        "address": "Nungwi Rd, Fukuchani, Zanzibar, Tanzania",
+        "location": "https://maps.app.goo.gl/Q49zGi5axPHZmu9i9",
+        "image": "images/fukuchani-ruins.webp",
+        "description": "The ruins are historically interesting. It was slavemarket in the beginning & later converted to a trading building. There is a school on the opposite site."
+    },
+    {
+        "name": "The Cave",
+        "address": "Jambiani Kibigija, Jambiani, Zanzibar, Tanzania",
+        "location": "https://maps.app.goo.gl/cQDCKijT5LBepPBj8",
+        "image": "images/the-cave.webp",
+        "description": "The cave is a 50 metre round sink hole in the middle of a small jungle in Jambiani,  offers a unique experience for adventurous nature-lovers, snorkellers, divers and people interested in Swahili Culture."
+    },
+    {
+        "name": "Tortoise Sanctuary",
+        "address": "Prison island, Zanzibar, Tanzania",
+        "location": "https://maps.app.goo.gl/SbsfYBhDGYfxVDay5",
+        "image": "images/tortoise-sanctuary.webp",
+        "description": "Worth visiting! The tortoises are so lovely! There are about 200 tortoises on the island at different ages. You can touch them and take a lot of pictures."
+    }
+]

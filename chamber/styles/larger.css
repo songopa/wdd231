@@ -13,6 +13,11 @@
         padding: 0 0.5rem;
         border-bottom: 0;
     }
+    nav .active {
+        padding-bottom: 20px;
+        margin-bottom: -20px;    
+    }
+    
     nav.show {
         display: flex;
     }
@@ -54,6 +59,9 @@
         height: auto;
     
     }
+    button {
+        padding: .375rem .7rem;
+    }
     #bizSnapshot {
         min-height: 167.94px;
     }
@@ -68,5 +76,19 @@
     textarea {
         max-width: 400px;
     }
+    .discover-img {
+        border-radius: 0 10px 10px 0;
+    }
+    .discover-img:hover {
+        transform: scale(1.015) translateX(4px);
+        border-radius: 0 10px 10px 0;
+    }
+    .site-visit-state {
+        position: fixed;
+        top: 4.4+rem;
+        right: 1rem;
+        background-color: aliceblue;
+    }
+
 
 }

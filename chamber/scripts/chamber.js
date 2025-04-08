@@ -4,6 +4,34 @@ currentYear.innerHTML = new Date().getFullYear();
 const modified = document.querySelector("#lastModified");
 modified.innerHTML ="Last modified: "+ document.lastModified;
 
+const lastVisitElm = document.querySelector(".site-visit-state");
+
+function updateLastVisit() {
+    let visited = localStorage.getItem('visited');
+    const currentTime = Date.now()
+
+    if (!visited) {
+        lastVisitElm.innerHTML = "";
+        lastVisitElm.innerHTML = "Welcome! Let us know if you have any questions. ❌";
+    } else if ((currentTime - visited)/86400000 <= 1) {
+        lastVisitElm.innerHTML = "";
+        lastVisitElm.innerHTML = "Back so soon! Awesome. ❌";
+    } else if ((currentTime - visited)/86400000 > 1) {
+        let days = (currentTime - visited)/86400000
+        lastVisitElm.innerHTML = "";
+        lastVisitElm.innerHTML = `You last visited ${Math.round(days)} days ago. ❌`;
+    }
+    localStorage.setItem('visited', currentTime);
+}
+
+if (lastVisitElm) {
+    updateLastVisit()
+
+    lastVisitElm.addEventListener('click', () => {
+        lastVisitElm.classList.toggle('d-none')
+    })
+}
+
 const menuBtn = document.querySelector("#menu");
 const navigation = document.querySelector("#navigation");
 
@@ -352,3 +380,43 @@ if(newMemberElm) {
     displayMemberThanks();
 }
 
+
+//Discover page
+
+const discoverElm = document.querySelector(".discover-grid");
+
+function placesTemplate (place) {
+    return `
+    <div class="card">
+        <h2 class="text-center">${place.name}</h2>
+        <figure>
+            <img class="discover-img" src="${place.image}" width="300" height="200px" alt="${place.name}" loading="lazy">
+        </figure>
+        <p>${place.description}</p>
+        <address class="mx-lg text-center">${place.address}</address>
+        <button onclick="window.open('${place.location}','_blank');" >Learn More about ${place.name}</button>
+        
+    </div> `
+}
+
+
+function displayPlaces(data) {
+    const placesHtml = data.map(placesTemplate);
+    discoverElm.innerHTML = '';
+    discoverElm.innerHTML = placesHtml.join('');
+}
+
+async function getPlacesData() {
+    try {
+        const response = await fetch('data/places.json')
+        const data = await response.json()
+        
+        displayPlaces(data)
+    } catch (err) {
+        console.error(err.message)
+    }
+}
+
+if (discoverElm) {
+    getPlacesData()
+}
