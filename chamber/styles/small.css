@@ -93,9 +93,6 @@ p, address {
     margin: .1rem;
     font-size: .9rem;
 }
-main {
-    min-height: 95;
-}
 
 main > figure {
     padding: 0;
@@ -474,7 +471,7 @@ dialog {
   /*Discover styling*/
 .discover-img {
     object-fit: cover;
-    width: 300;
+    width: 300px;
     height: auto;
     
 }
