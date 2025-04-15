@@ -1,29 +1,19 @@
 :root{
     
-    /* --primary-font-color: #fff;
+    --primary-font-color: #fff;
     --secondary-font-color: #000;
     --primary-background: #1a2238;
     --brand-color: #fdd935;
     --brand-color-2: #ff6a3d;
-    --nav-color: #104f96;
-    --link-hover-color: #0cc0df; */
-
-    --primary-font-color: #000;
-    --secondary-font-color: #fff;
-    --primary-background: #fff;
-    --brand-color: #107896;
-    --nav-color: #104f96;
-    --link-hover-color: #0cc0df;
+    --nav-color: #fdd935;
+    --link-hover-color: #fff;
     
     --card-background: #10789610;
     --card-border:0.1rem solid #b0c6f0;
     --card-border-radius: 5px;
-
-    --max-page-width: 1200px
 }
 
 body {
-    max-width: var(--max-page-width);
     margin: 0 auto;
     background-color: var(--primary-background);
     color: var(--primary-font-color);
@@ -52,7 +42,6 @@ footer {
     text-align: center;
     font-size: 1.1rem;
     width: 100%;
-    max-width: 1200px;
 }
 
 h1, h2, h3, h4 {
@@ -81,12 +70,13 @@ nav a {
     display: block;
     padding: 0.5rem;
     border-bottom: 2px solid var(--card-background);
-
+    
 }
 nav .active {
-    color: var(--brand-color);
-    font-weight: bold;
-    text-decoration : overline var(--link-hover-color) 2px;
+    color: var(--link-hover-color);
+    font-weight: 900;
+    text-decoration : underline var(--link-hover-color) 5px;
+    text-underline-offset: 13px;
 }
 nav a:hover {
     font-weight: 900;
@@ -121,9 +111,12 @@ section {
 header a {
     text-decoration: none;
 }
+a {
+    color: var(--brand-color-2);
+}
 button {
-    background: var(--brand-color-2);
-    border: 1px var(--brand-color-2) solid;
+    background: var(--brand-color);
+    border: 1px var(--brand-color) solid;
     border-radius: 0.375rem;
     padding: 0.7rem;
     margin: .2rem 0 .5rem 0;
@@ -315,7 +308,8 @@ label sup, legend sup {
     border: var(--card-border) ;
     border-radius: var(--card-border-radius);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    max-width: 100%;
+    max-width: 412px;
+    max-height: 4rem;
     padding: .5rem;
     border-bottom: 1rem solid var(--brand-color);
     font-size: .8rem;
@@ -333,31 +327,53 @@ label sup, legend sup {
 .display-at-large {
     display: none;
 }
-/* .logo-text-container {
-    height: 50px;
-    width: 167px;
-    text-decoration: none;
-} */
 .logo-main-text {
-    /* color: var(--brand-color); */
     letter-spacing: -3px;
-    font-size: 2.4rem;
+    font-size: 2rem;
     text-align: center;
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 800;
+    font-weight: 600;
+    margin-top: -4px;
 }
 .logo-sub-text {
     color: var(--primary-font-color);
     font-size: .6rem;
     text-align: center;
-    margin-top: -3px;
+    margin-top: -6px;
     letter-spacing: 4px;
     font-family: "Poppins", sans-serif;
+}
+.logo-main-text, .logo-sub-text {
+    margin-right: 0;
+    margin-left: -5rem;
 }
 .text-info {
     color: var(--brand-color);
 }
+.grid-footer {
+    display: block;
+    justify-items: center;
+}
+#foundItems {
+    min-height: 70vh;
+}
+/*Dialog styling*/
+dialog {
+    position: relative;
+    width: 80%;
+    max-width: 60vw;
+    background-color: whitesmoke;
+    padding: 1rem;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+  }
+.close-button::before {
+    content: "❌";
+    float: right;
+    cursor: pointer;
+    margin-top: -.9rem !important;
+  }
 
 /* Large screens */
 @media screen and (min-width: 37em) {
@@ -365,9 +381,6 @@ label sup, legend sup {
         display: flex;
         justify-content: space-around;
     }
-    /* header :nth-child(1) {
-        max-width: 150px;
-    } */
     nav {
         display: flex;
         justify-content: space-around;
@@ -377,6 +390,9 @@ label sup, legend sup {
     nav a {
         padding: 0 0.5rem;
         border-bottom: 0;
+    }
+    nav .active {
+        text-underline-offset: 20px;
     }
     nav.show {
         display: flex;
@@ -415,4 +431,14 @@ label sup, legend sup {
     .display-at-large {
         display: block;
     }
+    .grid-footer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        align-items: center;
+    }
+    .logo-main-text, .logo-sub-text {
+        margin-right: 10rem;
+        margin-left: 0;
+    }
+    
 }

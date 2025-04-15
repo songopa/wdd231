@@ -408,8 +408,8 @@ function displayPlaces(data) {
 
 async function getPlacesData() {
     try {
-        const response = await fetch('data/places.json')
-        const data = await response.json()
+        const response = await fetch('data/places.json');
+        const data = await response.json();
         
         displayPlaces(data)
     } catch (err) {
