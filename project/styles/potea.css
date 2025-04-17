@@ -114,12 +114,25 @@ header a {
 a {
     color: var(--brand-color-2);
 }
-button {
+button{
     background: var(--brand-color);
     border: 1px var(--brand-color) solid;
     border-radius: 0.375rem;
     padding: 0.7rem;
     margin: .2rem 0 .5rem 0;
+    font-weight: bold;
+    color: var(--secondary-font-color);
+}
+.button{
+    display: block;
+    max-width:fit-content;
+    justify-self: center;
+    text-decoration: none;
+    background: var(--brand-color);
+    border: 1px var(--brand-color) solid;
+    border-radius: 0.375rem;
+    padding: 0.7rem;
+    margin: 1rem 0 .5rem 0;
     font-weight: bold;
     color: var(--secondary-font-color);
 }
@@ -188,7 +201,7 @@ form button[type='submit'] {
     margin: 1rem 10% 0 10%;
 }
 label sup, legend sup {
-    color: rgb(158, 1, 1);
+    color: var(--brand-color);
 }
 .chunk-label {
     margin-bottom: -.5rem;
@@ -282,6 +295,9 @@ label sup, legend sup {
     font-size: 2rem;
     font-weight: bold;
 }
+.mx-xl {
+    margin: 4rem 0;
+}
 .mb-sm {
     margin-bottom: 1rem;
 }
@@ -322,7 +338,7 @@ label sup, legend sup {
 
 .display-at-mobile {
     display: block;
-    margin-top: -4rem;
+    margin-top: -1rem;
 }
 .display-at-large {
     display: none;
@@ -332,7 +348,6 @@ label sup, legend sup {
     font-size: 2rem;
     text-align: center;
     font-family: "League Spartan", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     margin-top: -4px;
 }

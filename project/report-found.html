@@ -14,7 +14,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Noto+Sans&family=Roboto&display=swap" rel="stylesheet"> -->
         <link rel="icon" href="favicon.ico">
-        <script src="scripts/main.js" type="module" defer></script>
+        <script src="scripts/main.js" type="module"></script>
     </head>
     <body>
         <header>
@@ -34,7 +34,7 @@
         </header>
         <main>
             <div class="d-flex justify-center align-center mt-xl mb-xl">
-                <section class="card" id="reportCard">
+                <div class="card" id="reportCard">
                     <div class="card-header">
                         Report a found Item
                     </div>
@@ -63,20 +63,18 @@
                             <button type="submit" class="center" >Send Report</button>
                         </form>
                     </div>
-                </section>
-                <section class="card d-none" id="confirmationCard">
+                </div>
+                <div class="card d-none" id="confirmationCard">
                     <div class="card-header">Report received </div>
                     <div class="card-body text-center">
-                        <p>
-                            Thanks helping someone get their item. 🙏 <br><br>
-                            <div id="report-count"></div> <br>
-                            <small>You are kind hearted and a good samaritan.</small>  
-                        </p>
+                        Thanks helping someone get their item. 🙏 <br><br>
+                        <div id="report-count"></div> <br>
+                        <small>You are kind hearted and a good samaritan.</small>
                     </div>
                     <div class="text-center">
                         <button id="anotherReport">Make Another Report</button>
                     </div>
-                </section>
+                </div>
             </div>
         </main>
         <footer class="grid-footer">
